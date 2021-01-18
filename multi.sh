@@ -52,7 +52,7 @@ while true $x != "ok"
 do
 clear
 echo -e "$barra"
-echo -e "\E[41;1;37m               MULTI-SCRIPTS MANAGER         \033[1;32m[\033[1;37m VERSAO: 1.0 \033[1;32m]\E[0m"
+echo -e "\E[41;1;37m              MULTI-SCRIPTS MANAGER   \033[1;32m[\033[1;37m V: 1.0 \033[1;32m]\E[0m"
 echo -e "$barra"
 echo -e "
 \033[37m------------  \033[1;30m[ \033[37m MULTI-SCRIPTS \033[1;30m]\033[37m  --------------
