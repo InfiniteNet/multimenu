@@ -98,7 +98,6 @@ case "$x" in
    clear
    scriptmx_illuminati
    exit;
-   ;; 
    ;;
    0 | 00)
    echo -e "\033[1;31mSaindo...\033[0m"
