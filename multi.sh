@@ -33,42 +33,6 @@ scriptmx_illuminati () {
     sudo apt update -y; apt upgrade -y; wget https://raw.githubusercontent.com/fabricio94b/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/instalscript.sh; chmod 777 instalscript.sh* && ./instalscript.sh*
 }
 
-##SCRIPTS DE PAGA
-
-admvps () {
-    apt-get update -y; apt-get upgrade -y; wget --no-check-certificate https://www.dropbox.com/s/ahnt8khniflsob3/New; chmod 777 New* && ./New*
-}
-sshpluskey () {
-    apt-get update -y; apt-get upgrade -y; wget sshplus.xyz/script/Plus; chmod 777 Plus; ./Plus
-}
-cgh () {
-    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/ChumoGH/ChumoGH-Script/master/instala.sh; chmod 777 instala.sh* && ./instala.sh*
-}
-
-##LIBERADOS POR EL DEV
-
-newfreeinstaldev () {
-    apt-get update -y; apt-get upgrade -y; wget https://www.dropbox.com/s/qhftefty46hz51x/newfreeinstal?dl=0 && bash new*
-}
-
-##TEAM-CASITA
-
-scriptmx_casita () {
-    sudo apt update -y; apt upgrade -y; wget https://raw.githubusercontent.com/fabricio94b/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/Casita/instalscript.sh; chmod +x instalscript.sh* && ./instalscript.sh*
-}
-power () {
-    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/fabricio94b/PROYECTOS_DESCONTINUADOS/master/VPSPACK-MOD_PWRMX/instalador && chmod +x instalador && ./instalador
-}
-scriptadmmx_reapergamo () {
-    apt-get update -y; apt-get upgrade -y; wget --no-check-certificate https://www.dropbox.com/s/s657r7dcaiq9oc9/instala.sh; chmod 777 instala.sh* && ./instala.sh*; passwd
-}
-sshpluscasitaES () {
-    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/scriptsmx/script/master/PLUSX/Plus; chmod 777 Plus; ./Plus
-}
-dankelcasita () {
-    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/casitadelterror/dankeladm/master/instalador/instala.sh; chmod 777 instala.sh* && ./instala.sh*
-}
-
 ##OPCIONES DE SISTEMA
 
 atualizar () {
