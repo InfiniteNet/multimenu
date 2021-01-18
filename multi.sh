@@ -15,13 +15,13 @@ echo "/root/multi.sh" > /bin/mko && chmod +x /bin/mko > /dev/null 2>&1
 ##TEAM-ILUUMINATI
 
 painelv20 () {
-     wget https://raw.githubusercontent.com/fabricio94b/Painel-v20/main/install; chmod +x install; ./install chmod 777 Plus; ./Plus
+     apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/fabricio94b/VPS-MANAGER/main/Plus; chmod 777 Plus; ./Plus
 }
 admmanageralpha () {
-    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/fabricio94b/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/instala.sh; chmod 777 instala.sh* && ./instala.sh*
+    wget https://raw.githubusercontent.com/fabricio94b/Painel-v20/main/install; chmod +x install; ./install chmod 777 instala.sh* && ./instala.sh*
 }
 newultimate () {
-    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/fabricio94b/ADM-ULTIMATE-NEW-FREE/master/instalar.sh; chmod 777 instalar.sh* && ./instalar.sh*
+    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/fabricio94b/botfree/main/iniciar.sh -O iniciar.sh; chmod +x iniciar.sh; ./iniciar.sh chmod 777 instalar.sh* && ./instalar.sh*
 }
 vpspack20 () {
     apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/fabricio94b/PROYECTOS_DESCONTINUADOS/master/VPSPACK-SERVER-V2.0/instalarold && bash instalarold
@@ -56,12 +56,13 @@ echo -e "\E[41;1;37mMULTI-SCRIPTS MANAGER             \033[1;32m[\033[1;37m VERS
 echo -e "$barra"
 echo -e "
 \033[37m------------  \033[1;30m[ \033[37m MULTI-SCRIPTS \033[1;30m]\033[37m  --------------
-\033[1;31m[\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;33mPAINEL v20 
-\033[1;31m[\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;33mADM-MANAGER-ULTIMATE ALPHA   \033[1;32m(FREE) \033[37m∆
-\033[1;31m[\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;33mNEW-ULTIMATE r6.3.4          \033[1;32m(FREE) \033[37m∆
+\033[1;31m[\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;33mVPS MANAGER
+\033[1;31m[\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;33mPAINEL v20   
+\033[1;31m[\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;33mBOT      
 \033[1;31m[\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mVPSPACK-SERVER-V2.0          \033[1;32m(FREE) 
 \033[1;31m[\033[1;36m 06 \033[1;31m] \033[1;37m• \033[1;33mVPSMX BY KALIX1-ILUUMINATI   \033[1;32m(FREE)
 \033[37m------------  \033[1;30m[ \033[37m SISTEMA \033[1;30m]\033[37m  ---------------------
+
 \033[1;31m[\033[1;36m 00 \033[1;31m] \033[1;37m• \033[1;37mSAIR \033[1;32m<\033[1;33m<\033[1;31m<                 \033[1;37m@admmanagerfree\033[0m \033[0m"
 echo -e "$barra"
 echo ""
