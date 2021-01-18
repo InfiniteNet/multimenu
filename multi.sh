@@ -52,16 +52,16 @@ while true $x != "ok"
 do
 clear
 echo -e "$barra"
-echo -e "\E[41;1;37mMULTI-SCRIPTS MANAGER             \033[1;32m[\033[1;37m VERSAO: r054 \033[1;32m]\E[0m"
+echo -e "\E[41;1;37mMULTI-SCRIPTS MANAGER             \033[1;32m[\033[1;37m VERSAO: 1.0 \033[1;32m]\E[0m"
 echo -e "$barra"
 echo -e "
-\033[37m------------  \033[1;30m[ \033[37m TEAM-ILUUMINATI \033[1;30m]\033[37m  --------------
+\033[37m------------  \033[1;30m[ \033[37m MULTI-SCRIPTS \033[1;30m]\033[37m  --------------
 \033[1;31m[\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;33mPAINEL v20 
 \033[1;31m[\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;33mADM-MANAGER-ULTIMATE ALPHA   \033[1;32m(FREE) \033[37m∆
 \033[1;31m[\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;33mNEW-ULTIMATE r6.3.4          \033[1;32m(FREE) \033[37m∆
 \033[1;31m[\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mVPSPACK-SERVER-V2.0          \033[1;32m(FREE) 
 \033[1;31m[\033[1;36m 06 \033[1;31m] \033[1;37m• \033[1;33mVPSMX BY KALIX1-ILUUMINATI   \033[1;32m(FREE)
-\033[37m------------  \033[1;30m[ \033[37m OPCIONES DE SISTEMA \033[1;30m]\033[37m  ----------
+\033[37m------------  \033[1;30m[ \033[37m SISTEMA \033[1;30m]\033[37m  ----------
 \033[1;31m[\033[1;36m 16 \033[1;31m] \033[1;37m• \033[1;35m[!] \033[1;32mACTUALIZAR  
 \033[1;31m[\033[1;36m 17 \033[1;31m] \033[1;37m• \033[1;35m[!] \033[1;31mDESINSTALAR MULTI-SCRIPTS
 \033[1;31m[\033[1;36m 00 \033[1;31m] \033[1;37m• \033[1;37mSALIR \033[1;32m<\033[1;33m<\033[1;31m<                 \033[1;37m@admmanagerfree\033[0m \033[0m"
@@ -100,57 +100,12 @@ case "$x" in
    scriptmx_illuminati
    exit;
    ;; 
-   7 | 07)
-   clear
-   admvps
-   exit;
-   ;;
-   8 | 08)
-   clear
-   sshpluskey
-   exit;
-   ;;     
-   9 | 09)
-   clear
-   cgh
-   exit;
-   ;;     
-   10)
-   clear
-   newfreeinstaldev
-   exit;
-   ;;
-   11)
-   clear
-   scriptmx_casita
-   exit;
-   ;;
-   12)
-   clear
-   power
-   exit;
-   ;;
-   13)
-   clear
-   scriptadmmx_reapergamo
-   exit;
-   ;;
-   14)
-   clear
-   sshpluscasitaES
-   exit;
-   ;;
-   15)
-   clear
-   dankelcasita
-   exit;
-   ;;
-   16)
+   7)
    clear
    atualizar
    exit;
    ;;
-   17)
+   8)
    clear
    remove_multiscripts
    exit;
