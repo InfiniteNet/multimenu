@@ -62,8 +62,6 @@ echo -e "
 \033[1;31m[\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mVPSPACK-SERVER-V2.0          \033[1;32m(FREE) 
 \033[1;31m[\033[1;36m 06 \033[1;31m] \033[1;37m• \033[1;33mVPSMX BY KALIX1-ILUUMINATI   \033[1;32m(FREE)
 \033[37m------------  \033[1;30m[ \033[37m SISTEMA \033[1;30m]\033[37m  ---------------------
-\033[1;31m[\033[1;36m 07 \033[1;31m] \033[1;37m• \033[1;35m[!] \033[1;32mACTUALIZAR  
-\033[1;31m[\033[1;36m 08 \033[1;31m] \033[1;37m• \033[1;35m[!] \033[1;31mDESINSTALAR MULTI-SCRIPTS
 \033[1;31m[\033[1;36m 00 \033[1;31m] \033[1;37m• \033[1;37mSAIR \033[1;32m<\033[1;33m<\033[1;31m<                 \033[1;37m@admmanagerfree\033[0m \033[0m"
 echo -e "$barra"
 echo ""
@@ -100,15 +98,6 @@ case "$x" in
    scriptmx_illuminati
    exit;
    ;; 
-   7)
-   clear
-   atualizar
-   exit;
-   ;;
-   8)
-   clear
-   remove_multiscripts
-   exit;
    ;;
    0 | 00)
    echo -e "\033[1;31mSaindo...\033[0m"
