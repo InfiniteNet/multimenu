@@ -21,8 +21,8 @@ do
 clear
 echo -e "$barra"
 echo -e "\E[41;1;37m            MULTI-SCRIPTS MANAGER   \033[1;32m[\033[1;37mV: 1.0\033[1;32m]\E[0m"
-echo -e "$barra"
 echo -e "
+echo -e "$barra"
 \033[1;31m  [\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;33mVPS MANAGER
 \033[1;31m  [\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;33mPAINEL v20   
 \033[1;31m  [\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;33mBOT (CRIADOR DE CONTA FREE)
