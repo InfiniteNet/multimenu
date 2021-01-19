@@ -13,7 +13,7 @@ PAINELV20 () {
     wget https://raw.githubusercontent.com/fabricio94b/Painel-v20/main/install; chmod +x install; ./install
 }
 BOTFREE () {
-    apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/fabricio94b/botfree/main/iniciar.sh -O iniciar.sh; chmod +x iniciar.sh; ./iniciar.sh
+    wget https://raw.githubusercontent.com/fabricio94b/botfree/main/iniciar.sh -O iniciar.sh; chmod +x iniciar.sh; ./iniciar.sh
 }
 
 while true $x != "ok"
