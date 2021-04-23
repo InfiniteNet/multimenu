@@ -15,6 +15,9 @@ PAINELV20 () {
 BOTFREE () {
     wget https://raw.githubusercontent.com/fabricio94b/botfree/main/iniciar.sh -O iniciar.sh; chmod +x iniciar.sh; ./iniciar.sh
 }
+PCFREE () {
+    curl -sO https://raw.githubusercontent.com/fabricio94b/PacoteFree/main/mbsfree && chmod 777 mbsfree && ./mbsfree
+}
 
 while true $x != "ok"
 do
@@ -25,6 +28,7 @@ echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━�
 echo -e "\033[1;31m  [\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;33mVPS MANAGER
 \033[1;31m  [\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;33mPAINEL v20   
 \033[1;31m  [\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;33mBOT (CRIADOR DE CONTA FREE)
+\033[1;31m  [\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mPACOTE FREE VIVO
 \033[1;31m  [\033[1;36m 00 \033[1;31m] \033[1;37m• \033[1;37mSAIR \033[1;32m<\033[1;33m<\033[1;31m<                    \033[1;37m@NET4G_PRO\033[0m \033[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
@@ -44,6 +48,11 @@ case "$x" in
    3 | 03)
    clear
    BOTFREE
+   exit;
+   ;;
+    4 | 04)
+   clear
+   PCFREE
    exit;
    ;;
    0 | 00)
