@@ -12,6 +12,9 @@ VPSMANAGER () {
 PAINELV20 () {
     wget https://raw.githubusercontent.com/fabricio94b/Painel-v20/main/install; chmod +x install; ./install
 }
+HABILITARROOT () {
+    wget -y; bash <(wget -qO- https://raw.githubusercontent.com/fabricio94b/HabilitarRoot/main/senharoot.sh)
+}
 BOTFREE () {
     wget https://raw.githubusercontent.com/fabricio94b/botfree/main/iniciar.sh -O iniciar.sh; chmod +x iniciar.sh; ./iniciar.sh
 }
@@ -24,7 +27,8 @@ echo -e "\E[41;1;37m            ⇱ MULTI SCRIPTS MANAGER ⇲             \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\033[1;31m  [\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;33mVPS MANAGER
 \033[1;31m  [\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;33mPAINEL v20   
-\033[1;31m  [\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;33mBOT (CRIADOR DE CONTA FREE)
+\033[1;31m  [\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;33mHABILITAR ROOT
+\033[1;31m  [\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mBOT (CRIADOR DE CONTA FREE)
 \033[1;31m  [\033[1;36m 00 \033[1;31m] \033[1;37m• \033[1;37mSAIR \033[1;32m<\033[1;33m<\033[1;31m<                    \033[1;37m@NET4G_PRO\033[0m \033[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
@@ -41,7 +45,12 @@ case "$x" in
    PAINELV20
    exit;
    ;;
-   3 | 03)
+    3 | 03)
+   clear
+   HABILITARROOT
+   exit;
+   ;;
+   4 | 04)
    clear
    BOTFREE
    exit;
