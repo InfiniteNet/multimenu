@@ -9,6 +9,9 @@ echo "/root/multi.sh" > /bin/mko && chmod +x /bin/mko > /dev/null 2>&1
 VPSMANAGER () {
      apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/fabricio94b/VPS-MANAGER/main/Plus; chmod 777 Plus; ./Plus
 }
+SLOWDNS () {
+     wget https://raw.githubusercontent.com/fabricio94b/slowdns/main/install; chmod +x install; ./install
+}
 PAINELV20 () {
     wget https://raw.githubusercontent.com/fabricio94b/Painel-v20/main/install; chmod +x install; ./install
 }
@@ -26,9 +29,10 @@ echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━�
 echo -e "\E[41;1;37m            ⇱ MULTI SCRIPTS MANAGER ⇲             \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\033[1;31m  [\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;33mVPS MANAGER
-\033[1;31m  [\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;33mPAINEL v20   
-\033[1;31m  [\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;33mHABILITAR ROOT(primeiro comando sudo -i)
-\033[1;31m  [\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mBOT (CRIADOR DE CONTA FREE)
+echo -e "\033[1;31m  [\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;33mSLOWDNS
+\033[1;31m  [\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;33mPAINEL v20   
+\033[1;31m  [\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mHABILITAR ROOT(primeiro comando sudo -i)
+\033[1;31m  [\033[1;36m 05 \033[1;31m] \033[1;37m• \033[1;33mBOT (CRIADOR DE CONTA FREE)
 \033[1;31m  [\033[1;36m 00 \033[1;31m] \033[1;37m• \033[1;37mSAIR \033[1;32m<\033[1;33m<\033[1;31m<                    \033[1;37m@NET4G_PRO\033[0m \033[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
@@ -40,17 +44,22 @@ case "$x" in
    VPSMANAGER
    exit;
    ;;
-   2 | 02)
+    2 | 02)
+   clear
+   SLOWDNS
+   exit;
+   ;;
+   3 | 03)
    clear
    PAINELV20
    exit;
    ;;
-    3 | 03)
+    4 | 04)
    clear
    HABILITARROOT
    exit;
    ;;
-   4 | 04)
+   5 | 05)
    clear
    BOTFREE
    exit;
