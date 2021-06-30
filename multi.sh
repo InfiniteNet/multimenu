@@ -7,10 +7,10 @@ echo "/root/multi.sh" > /bin/mko && chmod +x /bin/mko > /dev/null 2>&1
 ##TEAM-ILUUMINATI
 
 VPSMANAGER () {
-     apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/fabricio94b/VPS-MANAGER/main/Plus; chmod 777 Plus; ./Plus
+     apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/fabricio94b/VPS-MANAGER/main/Plus; chmod +x Plus; ./Plus
 }
 SLOWDNS () {
-     apt update; apt upgrade -y; rm -rf install; wget https://raw.githubusercontent.com/fabricio94b/SlowDNS/main/install; chmod +x install; ./install
+      wget https://raw.githubusercontent.com/fabricio94b/SlowDNS/main/install; chmod +x install; ./install
 }
 PAINELV20 () {
     wget https://raw.githubusercontent.com/fabricio94b/Painel-v20/main/install; chmod +x install; ./install
