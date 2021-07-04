@@ -10,7 +10,7 @@ VPSMANAGER () {
      apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/fabricio94b/VPS-MANAGER/main/Plus; chmod +x Plus; ./Plus
 }
 SLOWDNS () {
-      wget https://raw.githubusercontent.com/fabricio94b/SlowDNS/main/install; chmod +x install; ./install
+      wget https://raw.githubusercontent.com/fabricio94b/VPS-MANAGER/main/SlowDNS/install; chmod +x install; ./install
 }
 PAINELV20 () {
     wget https://raw.githubusercontent.com/fabricio94b/Painel-v20/main/install; chmod +x install; ./install
