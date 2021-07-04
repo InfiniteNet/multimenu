@@ -24,6 +24,10 @@ BOTFREE () {
 ATTSSL () {
     apt install wget -y; wget --no-check-certificate https://www.dropbox.com/s/v2hvhv8z86zlsqd/ssl.sh; chmod +x ssl.sh; ./ssl.sh
 }
+MENU () {
+    clear
+    menu
+}
 
 while true $x != "ok"
 do
@@ -37,6 +41,7 @@ echo -e "\033[1;31m  [\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;33mVPS MANA
 \033[1;31m  [\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mHABILITAR ROOT
 \033[1;31m  [\033[1;36m 05 \033[1;31m] \033[1;37m• \033[1;33mBOT (CRIADOR DE CONTA FREE)
 \033[1;31m  [\033[1;36m 06 \033[1;31m] \033[1;37m• \033[1;33mATUALIZAR CERTIFICADO SSL
+\033[1;31m  [\033[1;36m 07 \033[1;31m] \033[1;37m• \033[1;33mMENU
 \033[1;31m  [\033[1;36m 00 \033[1;31m] \033[1;37m• \033[1;37mSAIR"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
@@ -71,6 +76,11 @@ case "$x" in
    6 | 06)
    clear
    ATTSSL
+   exit;
+   ;;
+    7 | 07)
+   clear
+   MENU
    exit;
    ;;
    0 | 00)
