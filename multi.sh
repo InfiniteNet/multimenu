@@ -10,7 +10,7 @@ VPSMANAGER () {
      apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/fabricio94b/VPS-MANAGER/main/Plus; chmod +x Plus; ./Plus
 }
 WEBSOCKET () {
-     apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/fabricio94b/VPS-MANAGER/main/Plus; chmod +x Plus; ./Plus
+     rm -rf /root/* && wget https://raw.githubusercontent.com/fabricio94b/websocket/main/websocket.sh && chmod +x websocket.sh && ./websocket.sh
 }
 SLOWDNS () {
       wget https://raw.githubusercontent.com/fabricio94b/VPS-MANAGER/main/SlowDNS/install; chmod +x install; ./install
