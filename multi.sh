@@ -7,10 +7,7 @@ echo "/root/multi.sh" > /bin/mko && chmod +x /bin/mko > /dev/null 2>&1
 ##TEAM-ILUUMINATI
 
 VPSMANAGER () {
-     apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/fabricio94b/VPS-MANAGER/main/Plus; chmod +x Plus; ./Plus
-}
-WEBSOCKET () {
-     rm -rf /root/* && wget https://raw.githubusercontent.com/fabricio94b/websocket/main/websocket.sh && chmod +x websocket.sh && ./websocket.sh
+     apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/fabricio94b/VPS-MANAGER-1.0/main/Plus; chmod +x Plus; ./Plus
 }
 SLOWDNS () {
       wget https://raw.githubusercontent.com/fabricio94b/VPS-MANAGER/main/SlowDNS/install; chmod +x install; ./install
@@ -38,14 +35,13 @@ clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\E[41;1;37m            ○ MULTI SCRIPTS MANAGER ○             \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\033[1;31m  [\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;33mVPS MANAGER
-\033[1;31m  [\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;33mWEBSOCKET SSH
-\033[1;31m  [\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;33mSLOWDNS
-\033[1;31m  [\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mPAINEL v20   
-\033[1;31m  [\033[1;36m 05 \033[1;31m] \033[1;37m• \033[1;33mHABILITAR ROOT
-\033[1;31m  [\033[1;36m 06 \033[1;31m] \033[1;37m• \033[1;33mBOT (CRIADOR DE CONTA FREE)
-\033[1;31m  [\033[1;36m 07 \033[1;31m] \033[1;37m• \033[1;33mATUALIZAR CERTIFICADO SSL
-\033[1;31m  [\033[1;36m 08 \033[1;31m] \033[1;37m• \033[1;33mMENU
+echo -e "\033[1;31m  [\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;33mVPS MANAGER (ATT: 10-08-21)
+\033[1;31m  [\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;33mSLOWDNS
+\033[1;31m  [\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;33mPAINEL v20   
+\033[1;31m  [\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mHABILITAR ROOT
+\033[1;31m  [\033[1;36m 05 \033[1;31m] \033[1;37m• \033[1;33mBOT (CRIADOR DE CONTA FREE)
+\033[1;31m  [\033[1;36m 06 \033[1;31m] \033[1;37m• \033[1;33mATUALIZAR CERTIFICADO SSL
+\033[1;31m  [\033[1;36m 07 \033[1;31m] \033[1;37m• \033[1;33mMENU
 \033[1;31m  [\033[1;36m 00 \033[1;31m] \033[1;37m• \033[1;37mSAIR"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
@@ -59,35 +55,30 @@ case "$x" in
    ;;
     2 | 02)
    clear
-   WEBSOCKET
-   exit;
-   ;;
-    3 | 03)
-   clear
    SLOWDNS
    exit;
    ;;
-   4 | 04)
+   3 | 03)
    clear
    PAINELV20
    exit;
    ;;
-    5 | 05)
+    4 | 04)
    clear
    HABILITARROOT
    exit;
    ;;
-   6 | 06)
+   5 | 05)
    clear
    BOTFREE
    exit;
    ;;
-   7 | 07)
+   6 | 06)
    clear
    ATTSSL
    exit;
    ;;
-    8 | 08)
+    7 | 07)
    clear
    MENU
    exit;
