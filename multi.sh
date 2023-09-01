@@ -84,7 +84,7 @@ case "$x" in
    ;;
    7 | 07)
    clear
-   ATTSSL
+   TESTEDDOS
    exit;
    ;;
     8 | 08)
