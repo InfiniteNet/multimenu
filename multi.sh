@@ -16,7 +16,7 @@ PAINELV20 () {
     wget https://raw.githubusercontent.com/InfiniteNet/Painel-V20/main/install; chmod +x install; ./install
 }
 HABILITARROOT () {
-    wget -y; bash <(wget -qO- https://raw.githubusercontent.com/fabricio94b/HabilitarRoot/main/senharoot.sh)
+    wget -y; bash <(wget -qO- https://raw.githubusercontent.com/InfiniteNet/Abilitar-Root/main/senharoot.sh)
 }
 BOTWHATSAPP () {
     sudo apt install -y git && git clone https://github.com/InfiniteNet/autoinstalador.git && sudo chmod -R 777 autoinstalador && cd autoinstalador && sudo ./install_primaria
