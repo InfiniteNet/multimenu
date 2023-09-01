@@ -6,6 +6,6 @@ __MULTI-SCRIPTS__
 
 __SCRIPT__
 
-```wget https://raw.githubusercontent.com/fabricio94b/MULTI/main/multi.sh; chmod +x multi.sh; ./multi.sh```
+```wget https://raw.githubusercontent.com/InfiniteNet/multimenu/main/multi.sh; chmod +x multi.sh; ./multi.sh```
  
-![logo](https://github.com/fabricio94b/MULTI/blob/main/ms.png)
+![logo](https://github.com/InfiniteNet/multimenu/blob/main/ms.png)
