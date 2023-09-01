@@ -7,13 +7,13 @@ echo "/root/multi.sh" > /bin/mko && chmod +x /bin/mko > /dev/null 2>&1
 ##TEAM-ILUUMINATI
 
 VPSMANAGER () {
-     apt install wget -y; bash <(wget -qO- raw.githubusercontent.com/InfiniteNet/SSHPLUS/main/ssh-plus)
+     apt install wget -y; bash <(wget -qO- raw.githubusercontent.com/InfiniteNet/VPS-Manager/main/ssh-plus)
 }
 SLOWDNS () {
-      wget https://raw.githubusercontent.com/fabricio94b/VPS-MANAGER/main/SlowDNS/install; chmod +x install; ./install
+      wget https://raw.githubusercontent.com/InfiniteNet/VPS-Manager/main/Slow-DNS/install; chmod +x install; ./install
 }
 PAINELV20 () {
-    wget https://raw.githubusercontent.com/fabricio94b/Painel-v20/main/install; chmod +x install; ./install
+    wget https://raw.githubusercontent.com/InfiniteNet/Painel-V20/main/install; chmod +x install; ./install
 }
 HABILITARROOT () {
     wget -y; bash <(wget -qO- https://raw.githubusercontent.com/fabricio94b/HabilitarRoot/main/senharoot.sh)
@@ -35,9 +35,9 @@ clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\E[41;1;37m            ○ MULTI SCRIPTS MANAGER ○             \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\033[1;31m  [\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;33mVPS MANAGER (ATT: 10-08-21)
+echo -e "\033[1;31m  [\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;33mVPS MANAGER
 \033[1;31m  [\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;33mSLOWDNS
-\033[1;31m  [\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;33mPAINEL v20   
+\033[1;31m  [\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;33mPAINEL V20   
 \033[1;31m  [\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mHABILITAR ROOT
 \033[1;31m  [\033[1;36m 05 \033[1;31m] \033[1;37m• \033[1;33mBOTWHATSAPP
 \033[1;31m  [\033[1;36m 06 \033[1;31m] \033[1;37m• \033[1;33mATUALIZAR CERTIFICADO SSL
