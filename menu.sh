@@ -1,6 +1,6 @@
 
 barra="\033[0m\e[34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo "/root/mult.sh" > /bin/mko && chmod +x /bin/mko > /dev/null 2>&1
+echo "/root/menu.sh" > /bin/mko && chmod +x /bin/mko > /dev/null 2>&1
 
 ##SCRIPTS A INSTALAR
 
@@ -36,7 +36,7 @@ while true $x != "ok"
 do
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[41;1;37m            ○ MULTI SCRIPTS MANAGER ○             \E[0m"
+echo -e "\E[41;1;37m            ○ MENU SCRIPTS INFINITENET ○             \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\033[1;31m  [\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;33mVPS MANAGER
 \033[1;31m  [\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;33mSLOWDNS
