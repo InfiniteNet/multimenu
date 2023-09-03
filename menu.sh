@@ -24,8 +24,8 @@ BOTWHATSAPP () {
 ATTSSL () {
     apt install wget -y; wget --no-check-certificate https://www.dropbox.com/scl/fi/5dd563hduerr5uk1d8lph/ssl.zip?rlkey=hj8mu86cxlho9bstr4ej0h34z&dl=0; chmod +x ssl.sh; ./ssl.sh
 }
-TESTEDDOS () {
-     wget https://raw.githubusercontent.com/InfiniteNet/DDOS/master/pentmenu
+ATUALIZARBOT () {
+     cd ./autoinstalador && sudo ./install_instancia
 }
 MENU () {
     clear
@@ -44,7 +44,7 @@ echo -e "\033[1;31m  [\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;33mVPS MANA
 \033[1;31m  [\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mHABILITAR ROOT
 \033[1;31m  [\033[1;36m 05 \033[1;31m] \033[1;37m• \033[1;33mBOTWHATSAPP
 \033[1;31m  [\033[1;36m 06 \033[1;31m] \033[1;37m• \033[1;33mATUALIZAR CERTIFICADO SSL
-\033[1;31m  [\033[1;36m 07 \033[1;31m] \033[1;37m• \033[1;33mTESTE DDOS
+\033[1;31m  [\033[1;36m 07 \033[1;31m] \033[1;37m• \033[1;33mATUALIZAR BOT
 \033[1;31m  [\033[1;36m 08 \033[1;31m] \033[1;37m• \033[1;33mMENU
 \033[1;31m  [\033[1;36m 00 \033[1;31m] \033[1;37m• \033[1;37mSAIR"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -84,7 +84,7 @@ case "$x" in
    ;;
    7 | 07)
    clear
-   TESTEDDOS
+   ATUALIZARBOT
    exit;
    ;;
     8 | 08)
