@@ -20,6 +20,7 @@ HABILITARROOT () {
 }
 BOTWHATSAPP () {
     sudo apt install -y git && git clone https://github.com/InfiniteNet/autoinstalador.git && sudo chmod -R 777 autoinstalador && cd autoinstalador && sudo ./install_primaria
+}    
 ATTSSL () {
     apt install wget -y; wget --no-check-certificate https://www.dropbox.com/scl/fi/5dd563hduerr5uk1d8lph/ssl.zip?rlkey=hj8mu86cxlho9bstr4ej0h34z&dl=0; chmod +x ssl.sh; ./ssl.sh
 }
