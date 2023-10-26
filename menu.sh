@@ -7,9 +7,9 @@ echo "/root/menu.sh" > /bin/mko && chmod +x /bin/mko > /dev/null 2>&1
 ##TEAM-ILUUMINATI
 
 VPSMANAGER () {
-     apt install wget -y; bash <(wget -qO- raw.githubusercontent.com/InfiniteNet/VPS-Manager/main/ssh-plus)
+     bash <(curl https://raw.githubusercontent.com/InfiniteNet/Infinitenet-SSH/main/install.sh)
 }
-SLOWDNS () {
+PROXY () {
       wget https://raw.githubusercontent.com/InfiniteNet/VPS-Manager/main/Slow-DNS/install; chmod +x install; ./install
 }
 PAINELV20 () {
