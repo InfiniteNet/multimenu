@@ -6,13 +6,13 @@ echo "/root/menu.sh" > /bin/mko && chmod +x /bin/mko > /dev/null 2>&1
 
 ##TEAM-ILUUMINATI
 
-VPSMANAGER () {
+INFINITENET-SSH () {
      bash <(curl https://raw.githubusercontent.com/InfiniteNet/Infinitenet-SSH/main/install.sh)
 }
 PROXY () {
       wget https://raw.githubusercontent.com/InfiniteNet/VPS-Manager/main/Slow-DNS/install; chmod +x install; ./install
 }
-PAINELV20 () {
+PAINEL-WEB-PRO () {
     wget https://raw.githubusercontent.com/InfiniteNet/Painel-V20/main/install; chmod +x install; ./install
 }
 HABILITARROOT () {
@@ -38,9 +38,9 @@ clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\E[41;1;37m            ○ MENU SCRIPTS INFINITENET ○             \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\033[1;31m  [\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;33mVPS MANAGER
-\033[1;31m  [\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;33mSLOWDNS
-\033[1;31m  [\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;33mPAINEL V20   
+echo -e "\033[1;31m  [\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;33mINFINITENET-SSH
+\033[1;31m  [\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;33mPROXY
+\033[1;31m  [\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;33mPAINEL-WEB-PRO  
 \033[1;31m  [\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mHABILITAR ROOT
 \033[1;31m  [\033[1;36m 05 \033[1;31m] \033[1;37m• \033[1;33mBOTWHATSAPP
 \033[1;31m  [\033[1;36m 06 \033[1;31m] \033[1;37m• \033[1;33mATUALIZAR CERTIFICADO SSL
@@ -54,17 +54,17 @@ echo -ne "\033[1;32m O QUE DESEJA FAZER \033[1;33m?\033[1;31m?\033[1;37m : "; re
 case "$x" in 
    1 | 01)
    clear
-   VPSMANAGER
+   INFINITENET-SSH
    exit;
    ;;
     2 | 02)
    clear
-   SLOWDNS
+   PROXY
    exit;
    ;;
    3 | 03)
    clear
-   PAINELV20
+   PAINEL-WEB-PRO
    exit;
    ;;
     4 | 04)
