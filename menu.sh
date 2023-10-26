@@ -10,7 +10,7 @@ INFINITENET-SSH () {
      bash <(curl https://raw.githubusercontent.com/InfiniteNet/Infinitenet-SSH/main/install.sh)
 }
 PROXY-TUNEL () {
-      wget https://raw.githubusercontent.com/InfiniteNet/VPS-Manager/main/Slow-DNS/install; chmod +x install; ./install
+      bash <(curl https://raw.githubusercontent.com/InfiniteNet/Proxy-Tunel/main/install.sh)
 }
 PAINEL-WEB-PRO () {
     wget https://raw.githubusercontent.com/InfiniteNet/Painel-V20/main/install; chmod +x install; ./install
