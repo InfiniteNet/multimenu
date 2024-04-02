@@ -19,13 +19,13 @@ HABILITARROOT () {
     wget -y; bash <(wget -qO- https://raw.githubusercontent.com/InfiniteNet/Abilitar-Root/main/senharoot.sh)
 }
 BOTWHATSAPP () {
-    sudo apt install -y git && git clone https://github.com/InfiniteNet/Instalador-Whaticket-Saas-redis-docker.git Instalador-Whaticket-Saas-redis-docker && sudo chmod -R 777 Instalador-Whaticket-Saas-redis-docker  && cd Instalador-Whaticket-Saas-redis-docker  && sudo ./install_primaria
+    sudo apt install -y git && git clone https://github.com/InfiniteNet/whaticket.typebot-instalador.git && sudo chmod -R 777 autoinstalador && cd autoinstalador && sudo ./install_primaria
 }    
 ATTSSL () {
     apt install wget -y; wget --no-check-certificate https://www.dropbox.com/scl/fi/5dd563hduerr5uk1d8lph/ssl.zip?rlkey=hj8mu86cxlho9bstr4ej0h34z&dl=0; chmod +x ssl.sh; ./ssl.sh
 }
 ATUALIZARBOT () {
-     cd ./Instalador-Whaticket-Saas-redis-docker && sudo ./install_instancia
+     cd ./autoinstalador && sudo ./install_instancia
 }
 MENU () {
     clear
