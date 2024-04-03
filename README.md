@@ -7,7 +7,7 @@ __MULTI-SCRIPTS__
 __SCRIPT__
 
 ```bash
-wget https://raw.githubusercontent.com/InfiniteNet/multimenu/main/menu.sh; chmod +x menu.sh; ./menu.sh
+wget https://raw.githubusercontent.com/InfiniteNet/multimenu/main/menu; chmod +x menu; ./menu
 ```
  
 ![logo](https://github.com/InfiniteNet/multimenu/blob/main/ms.png)
