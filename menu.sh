@@ -20,12 +20,15 @@ HABILITARROOT () {
 }
 BOTWHATSAPP () {
     sudo apt install -y git && git clone https://github.com/InfiniteNet/whaticket.typebot-instalador.git && sudo chmod -R 777 whaticket.typebot-instalador && cd whaticket.typebot-instalador && sudo ./install_primaria
-}    
-ATTSSL () {
-    apt install wget -y; wget --no-check-certificate https://www.dropbox.com/scl/fi/5dd563hduerr5uk1d8lph/ssl.zip?rlkey=hj8mu86cxlho9bstr4ej0h34z&dl=0; chmod +x ssl.sh; ./ssl.sh
 }
 ATUALIZARBOT () {
      cd ./whaticket.typebot-instalador && sudo ./install_instancia
+}
+AAPANEL () {
+     URL=https://www.aapanel.com/script/install_6.0_en.sh && if [ -f /usr/bin/curl ];then curl -ksSO "$URL" ;else wget --no-check-certificate -O install_6.0_en.sh "$URL";fi;bash install_6.0_en.sh aapanel     
+}    
+ATTSSL () {
+    apt install wget -y; wget --no-check-certificate https://www.dropbox.com/scl/fi/5dd563hduerr5uk1d8lph/ssl.zip?rlkey=hj8mu86cxlho9bstr4ej0h34z&dl=0; chmod +x ssl.sh; ./ssl.sh
 }
 MENU () {
     clear
@@ -43,8 +46,9 @@ echo -e "\033[1;31m  [\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;33mINFINITE
 \033[1;31m  [\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;33mPAINEL-WEB-PRO  
 \033[1;31m  [\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mHABILITAR ROOT
 \033[1;31m  [\033[1;36m 05 \033[1;31m] \033[1;37m• \033[1;33mBOTWHATSAPP
-\033[1;31m  [\033[1;36m 06 \033[1;31m] \033[1;37m• \033[1;33mATUALIZAR CERTIFICADO SSL
 \033[1;31m  [\033[1;36m 07 \033[1;31m] \033[1;37m• \033[1;33mATUALIZAR BOT
+\033[1;31m  [\033[1;36m 07 \033[1;31m] \033[1;37m• \033[1;33mAAPANEL
+\033[1;31m  [\033[1;36m 06 \033[1;31m] \033[1;37m• \033[1;33mATUALIZAR CERTIFICADO SSL
 \033[1;31m  [\033[1;36m 08 \033[1;31m] \033[1;37m• \033[1;33mMENU
 \033[1;31m  [\033[1;36m 00 \033[1;31m] \033[1;37m• \033[1;37mSAIR"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -79,15 +83,20 @@ case "$x" in
    ;;
    6 | 06)
    clear
-   ATTSSL
+   ATUALIZARBOT
    exit;
    ;;
    7 | 07)
    clear
-   ATUALIZARBOT
+   AAPANEL
    exit;
    ;;
-    8 | 08)
+   8 | 08)
+   clear
+   ATTSSL
+   exit;
+   ;;
+    9 | 09)
    clear
    MENU
    exit;
