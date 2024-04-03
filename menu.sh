@@ -18,6 +18,9 @@ PAINEL-WEB-PRO () {
 HABILITARROOT () {
     wget -y; bash <(wget -qO- https://raw.githubusercontent.com/InfiniteNet/Abilitar-Root/main/senharoot.sh)
 }
+TYPEBOT () {
+    sudo apt install -y git && git clone https://github.com/InfiniteNet/instaladortypebot.git && cd instaladortypebot && chmod +x typebot.sh && ./typebot.sh
+}
 BOTWHATSAPP () {
     sudo apt install -y git && git clone https://github.com/InfiniteNet/whaticket.typebot-instalador.git && sudo chmod -R 777 whaticket.typebot-instalador && cd whaticket.typebot-instalador && sudo ./install_primaria
 }
@@ -45,6 +48,7 @@ echo -e "\033[1;31m  [\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;33mINFINITE
 \033[1;31m  [\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;33mPROXY-TUNEL
 \033[1;31m  [\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;33mPAINEL-WEB-PRO  
 \033[1;31m  [\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;33mHABILITAR ROOT
+\033[1;31m  [\033[1;36m 05 \033[1;31m] \033[1;37m• \033[1;33mTYPEBOT
 \033[1;31m  [\033[1;36m 05 \033[1;31m] \033[1;37m• \033[1;33mBOTWHATSAPP
 \033[1;31m  [\033[1;36m 07 \033[1;31m] \033[1;37m• \033[1;33mATUALIZAR BOT
 \033[1;31m  [\033[1;36m 07 \033[1;31m] \033[1;37m• \033[1;33mAAPANEL
@@ -83,20 +87,25 @@ case "$x" in
    ;;
    6 | 06)
    clear
-   ATUALIZARBOT
+   BOTWHATSAPP
    exit;
    ;;
    7 | 07)
    clear
-   AAPANEL
+   ATUALIZARBOT
    exit;
    ;;
    8 | 08)
    clear
+   AAPANEL
+   exit;
+   ;;
+   9 | 09)
+   clear
    ATTSSL
    exit;
    ;;
-    9 | 09)
+    10 | 010)
    clear
    MENU
    exit;
