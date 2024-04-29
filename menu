@@ -7,7 +7,7 @@ echo "/root/menu" > /bin/mko && chmod +x /bin/mko > /dev/null 2>&1
 ##TEAM-ILUUMINATI
 
 SSH-PLUS () {
-     wget https://raw.githubusercontent.com/SSH-PLUS/master/Plus && chmod +x Plus* && ./Plus*
+     wget https://raw.githubusercontent.com/InfiniteNet/SSH-PLUS/master/Plus && chmod +x Plus* && ./Plus*
 }
 PROXY-TUNEL () {
       bash <(curl https://raw.githubusercontent.com/InfiniteNet/Proxy-Tunel/main/install.sh)
